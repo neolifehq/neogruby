@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require "bundler/setup"
+require "dry/cli"
+require_relative '../lib/neo_gruby'
+Dry::CLI.new(NeoGruby::CLI::Commands).call
